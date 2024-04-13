@@ -2,7 +2,14 @@
 module.exports = {
   content: ['./*.html'],
   theme: {
-    extend: {},
+    extend: {
+      // screens: {
+      //   md: 835px;
+      // }
+      // // fontFamily: {
+
+      // // }
+    },
   },
   plugins: [],
 }
