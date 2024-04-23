@@ -6,13 +6,55 @@
     <title>homepage</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="items-center">
+<body class="flex flex-col items-center">
     <navbar-component></navbar-component>
+
+    <section class=" gap-16 text-center">
+        <!-- hero Environment -->
+        <div class="relative w-screen text-center mb-3">
+            <p class="bg-zinc-900 p-4 text-white text-center text-xs font-thin tracking-wider">Join us this Earth Day by recycling your Apple devices. <a class="text-blue-500" href="#">Recycle for free</a></p>
+            <img class="w-full h-50" src="../../assets/images/homepage/hero_environment_endframe__dtaponfl8oae_largetall_2x.jpg" alt="hero environment">
+            <div class="w-full absolute top-20">
+                <p class="text-5xl font-semibold mb-4">Apple 2030</p>
+                <p class="text-2xl font-light">A plan as innovative as our product.</p>
+                <button type="button" class="text-white font-light bg-blue-500 hover:bg-blue-400 rounded-full text-sm px-5 py-2.5 mt-4 text-center">Learn more</button>
+            </div>
+        </div>
     
-    <section class="w-full">
-        <p class="bg-zinc-900 p-5 text-white text-center">Join us this Earth Day by recycling your Apple devices. <a class="text-blue-500" href="#">Recycle for free</a></p>
+        <!-- iphone 15 -->
+        <div class="relative text-center flex justify-center mb-3">
+            <img class="w-screen h-fit" src="../../assets/images/homepage/hero_iphone_family_a__c7v3mvx3jv42_largetall_2x.jpg" alt="iphone family">
+            <div class="absolute top-10 text-white text-center items-center">
+                <p class="text-5xl font-semibold mb-4">iPhone</p>
+                <p class="text-2xl font-light">Our most powerful cameras yet.</p>
+                <p class="text-2xl font-light">Ultra fast chips. And USB C</p>
+                <div class="flex justify-center gap-4">
+                    <button type="button" class="font-light bg-blue-500 hover:bg-blue-400 rounded-full text-sm px-5 py-2.5 mt-4 text-center">Learn more</button>
+                    <button type="button" class="text-blue-500 font-light bg-blue-500 bg-opacity-0 border border-blue-500 hover:bg-blue-400 rounded-full text-sm px-5 py-2.5 mt-4 text-center">Shop iPhone</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- vision pro -->
+        <div class="relative text-center flex justify-center mb-3">
+            <img class="w-screen h-fit" src="../../assets/images/homepage/hero_apple_vision_pro_enhanced_endframe__b917czne63hy_xlarge_2x.jpg" alt="vision pro pic">
+            <div class="absolute bottom-16 text-white text-center">
+                <img class="w-60 h-12 ml-24" src="../../assets/images/homepage/homepage.png" alt="vision pro typo">
+                <p class="text-2xl font-light mt-2">You've never seen everthing like this before.</p>
+                <div class="flex justify-center gap-4">
+                    <button type="button" class="font-light bg-gray-50 text-black hover:bg-white rounded-full text-sm px-5 py-2.5 mt-4 text-center">Learn more</button>
+                    <button type="button" class="text-white font-light bg-blue-500 bg-opacity-0 border border-white hover:bg-white hover:text-black rounded-full text-sm px-5 py-2.5 mt-4 text-center">Buy</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- vision pro -->
+    <section class="w-screen">
+        
         <div>
-            <video class="autoplay">
+            <video class="autoplay w-screen">
                 <source src="../../assets/videos/homepage/large_2x.mp4" type="video/mp4"/>
             </video>
             
