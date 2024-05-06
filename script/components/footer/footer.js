@@ -25,7 +25,7 @@ export class Footer extends HTMLElement{
                         </div>
                         <div class="flex flex-col space-y-2">
                             <p class="font-bold mt-6">Apple Wallet</p>
-                            <a href="#">Wallet</a>
+                            <a href="#">Wallet</a>git 
                             <a href="#">Apple Card</a>
                             <a href="#">Apple Pay</a>
                             <a href="#">Apple Cash</a>
