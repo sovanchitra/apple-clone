@@ -5,11 +5,11 @@ export class Footer extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
         <body class="flex flex-col items-center">
-        <div class="max-w-screen-full text-xs">
-            <section class="grid grid-cols-5">
+        <div class="max-w-screen-lg text-xs font-light">
+            <section class="grid grid-cols-5 gap-12 text-gray-700">
                 <div>
                     <div class="flex flex-col space-y-2">
-                        <p class="font-bold mt-6">Shop and learn</p>
+                        <p class="font-semibold mt-6">Shop and learn</p>
                         <a href="#">Store</a>
                         <a href="#">Mac</a>
                         <a href="#">iPad</a>
@@ -24,7 +24,7 @@ export class Footer extends HTMLElement{
                         
                     </div>
                     <div class="flex flex-col space-y-2">
-                        <p class="font-bold mt-6">Apple Wallet</p>
+                        <p class="font-semibold mt-6">Apple Wallet</p>
                         <a href="#">Wallet</a>
                         <a href="#">Apple Card</a>
                         <a href="#">Apple Pay</a>
@@ -34,14 +34,14 @@ export class Footer extends HTMLElement{
                     
                 <div>
                     <div class="flex flex-col space-y-2">
-                        <p class="font-bold mt-6">Account</p>
+                        <p class="font-semibold mt-6">Account</p>
                         <a href="#">Manage Your Apple ID</a>
                         <a href="#">Apple Store Account</a>
                         <a href="#">iCloud.com</a>
                     </div>
                     
                     <div class="flex flex-col space-y-2">
-                        <p class="font-bold mt-8">Entertainment</p>
+                        <p class="font-semibold mt-8">Entertainment</p>
                         <a href="#">Apple One</a>
                         <a href="#">Apple TV+</a>
                         <a href="#">Apple Music</a>
@@ -55,7 +55,7 @@ export class Footer extends HTMLElement{
                 </div>
         
                 <div class="flex flex-col space-y-2">
-                    <p class="font-bold mt-6">Apple Store</p>
+                    <p class="font-semibold mt-6">Apple Store</p>
                     <a href="#">Find a Store</a>
                     <a href="#">Genius Bar</a>
                     <a href="#">Today at Apple</a>
@@ -71,24 +71,24 @@ export class Footer extends HTMLElement{
                 
                 <div>
                     <div class="flex flex-col space-y-2">
-                        <p class="font-bold mt-6">For Business</p>
+                        <p class="font-semibold mt-6">For Business</p>
                         <a href="#">Apple and Business</a>
                         <a href="#">Shop for Business</a>
                     </div>
                     <div class="flex flex-col space-y-2">
-                        <p class="font-bold mt-6">For Education</p>
+                        <p class="font-semibold mt-6">For Education</p>
                         <a href="#">Apple and Education</a>
                         <a href="#">Shop for K-12</a>
                         <a href="#">Shop for College</a>
                     </div>
                     <div class="flex flex-col space-y-2">
-                        <p class="font-bold mt-6">For Healthcare</p>
+                        <p class="font-semibold mt-6">For Healthcare</p>
                         <a href="#">Apple in Healthcare</a>
                         <a href="#">Health on Apple Watch</a>
                         <a href="#">Health Records on iPhone</a>
                     </div>
                     <div class="flex flex-col space-y-2">
-                        <p class="font-bold mt-6">For Government</p>
+                        <p class="font-semibold mt-6">For Government</p>
                         <a href="#">Shop for Government</a>
                         <a href="#">Shop for Veterans and Military</a>
                     </div>
@@ -96,7 +96,7 @@ export class Footer extends HTMLElement{
         
                 <div>
                     <div class="flex flex-col space-y-2">
-                        <p class="font-bold mt-6">Apple Values</p>
+                        <p class="font-semibold mt-6">Apple Values</p>
                         <a href="#">Accessibility</a>
                         <a href="#">Education</a>
                         <a href="#">Environment</a>
