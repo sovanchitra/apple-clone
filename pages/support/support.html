@@ -14,41 +14,96 @@
     </section>
 
     <!-- apple support -->
-    <section class="w-screen flex flex-col items-center justify-center">
-        <div class="max-w-screen-lg w-screen text-center">
-            <span>Apple Support</span>
-            <div class="grid grid-cols-7 gap-10 items-center">
-                <div>
-                    <img class="h-20" src="../../assets/images/support/image-grid-iphone_2x.png" alt="">
-                    <p>iPhone</p>
-                </div>
-                <div>
-                    <img class="h-20" src="../../assets/images/support/image-grid-mac_2x.png" alt="">
-                    <p>Mac</p>
-                </div>
-                <div>
-                    <img class="h-20" src="../../assets/images/support/image-grid-ipad_2x.png" alt="">
-                    <p>iPad</p>
-                </div>
-                <div>
-                    <img class="h-20" src="../../assets/images/support/image-grid-watch-_2x.png" alt="">
-                    <p>Watch</p>
-                </div>
-                <div>
-                    <img class="h-20" src="../../assets/images/support/image-grid-apple-vision-pro_2x.png" alt="">
-                    <p>Vision</p>
-                </div>
-                <div>
-                    <img class="h-20" src="../../assets/images/support/image-grid-airpods_2x.png" alt="">
-                    <p>AirPods</p>
-                </div>
-                <div>
-                    <img class="h-20" src="../../assets/images/support/image-grid-tv_2x.png" alt="">
-                    <p>TV</p>
-                </div>
-            </div>  
+    <section class="w-screen">
+        <div class=" flex flex-col items-center justify-center mt-10">
+            <div class="max-w-screen-lg w-screen text-center space-y-10">
+                <span class="text-4xl md:text-5xl lg:text-6xl font-medium">Apple Support</span>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 items-center gap-y-10 md:gap-y-20 lg:gap-0 sm:px-16 lg:px-0">
+                    <div class="flex flex-col items-center gap-4">
+                        <img class="h-[70px]" src="../../assets/images/support/image-grid-iphone_2x.png" alt="">
+                        <p>iPhone</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <img class="h-[70px]" src="../../assets/images/support/image-grid-mac_2x.png" alt="">
+                        <p>Mac</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <img class="h-[70px]" src="../../assets/images/support/image-grid-ipad_2x.png" alt="">
+                        <p>iPad</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <img class="h-[70px]" src="../../assets/images/support/image-grid-watch-_2x.png" alt="">
+                        <p>Watch</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <img class="h-[70px]" src="../../assets/images/support/image-grid-apple-vision-pro_2x.png" alt="">
+                        <p>Vision</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <img class="h-[70px]" src="../../assets/images/support/image-grid-airpods_2x.png" alt="">
+                        <p>AirPods</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <img class="h-[70px]" src="../../assets/images/support/image-grid-tv_2x.png" alt="">
+                        <p>TV</p>
+                    </div>
+                </div>  
+            </div>
         </div>
+    </section>
 
+    <!-- boxes -->
+    <section class="w-screen">
+        <div class="flex flex-col items-center justify-center mt-10">
+            <div class="max-w-screen-lg w-screen text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 px-20 lg:px-0 drop-shadow-lg">
+                <a href="#">
+                    <div class="flex flex-col justify-center gap-y-3 h-44 bg-gray-100 rounded-3xl">
+                        <img class="h-14" src="../../assets/images/support/tile-topic-password_2x.svg" alt="">
+                        <p class="text-blue-500 hover:underline">Forgot Apple ID password</p>
+                    </div> 
+                </a>
+                <a href="#">
+                    <div class="flex flex-col justify-center gap-y-3 h-44 bg-gray-100 rounded-3xl">
+                        <img class="h-14" src="../../assets/images/support/tile-topic-repair_2x.svg" alt="">
+                        <p class="text-blue-500 hover:underline">Apple Repair</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="flex flex-col justify-center gap-y-5 h-44 bg-gray-100 rounded-3xl">
+                        <img class="h-14" src="../../assets/images/support/tile-topic-billing_2x.svg" alt="">
+                        <p class="text-blue-500 hover:underline">Billing and subscriptions</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- search bar -->
+    <section class="w-screen">
+        <div class=" flex flex-col items-center justify-center mt-10">
+            <div class="max-w-screen-lg w-screen text-center space-y-10">
+                <span class="text-2xl md:text-3xl lg:text-4xl font-medium">Search for more topics</span>
+                <form>   
+                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <img class="w-8 h-8 pt-1" src="../../assets/images/support/download.svg" alt="">
+                        </div>
+                        <input type="search" id="default-search" class="block w-full p-4 ps-12 font-light border border-gray-300 rounded-xl" placeholder="Search Support" required />
+                    </div>
+                </form>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- feature -->
+    <section class="w-screen">
+        <div class=" flex flex-col items-center justify-center mt-10">
+            <div class="max-w-screen-lg w-screen text-center space-y-10">
+                <div></div>
+            </div>
+        </div>
     </section>
 
     <script src="/script/script.js" type="module"></script>
