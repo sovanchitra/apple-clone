@@ -4,10 +4,10 @@ export class Footer extends HTMLElement{
     }
     connectedCallback(){
         this.innerHTML = `
-        <div class="max-w-screen-lg w-screen text-xs text-gray-800">
-            <section class="grid grid-cols-5 font-light">
+        <div class="max-w-[880px] w-screen text-xs text-gray-800">
+            <section class="grid grid-cols-5 font-light gap-10">
                 <div>
-                    <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-2">
                         <p class="font-semibold mt-6">Shop and learn</p>
                         <a href="#">Store</a>
                         <a href="#">Mac</a>
@@ -22,7 +22,7 @@ export class Footer extends HTMLElement{
                         <a href="#">Gift Cards</a>
                         
                     </div>
-                    <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-2">
                         <p class="font-semibold mt-6">Apple Wallet</p>
                         <a href="#">Wallet</a>
                         <a href="#">Apple Card</a>
@@ -32,14 +32,14 @@ export class Footer extends HTMLElement{
                 </div>      
                     
                 <div>
-                    <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-2">
                         <p class="font-semibold mt-6">Account</p>
                         <a href="#">Manage Your Apple ID</a>
                         <a href="#">Apple Store Account</a>
                         <a href="#">iCloud.com</a>
                     </div>
                     
-                    <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-2">
                         <p class="font-semibold mt-8">Entertainment</p>
                         <a href="#">Apple One</a>
                         <a href="#">Apple TV+</a>
@@ -53,7 +53,7 @@ export class Footer extends HTMLElement{
                     </div>
                 </div>
         
-                <div class="flex flex-col space-y-3">
+                <div class="flex flex-col space-y-2">
                     <p class="font-semibold mt-6">Apple Store</p>
                     <a href="#">Find a Store</a>
                     <a href="#">Genius Bar</a>
@@ -69,24 +69,24 @@ export class Footer extends HTMLElement{
                 </div>
                 
                 <div>
-                    <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-2">
                         <p class="font-semibold mt-6">For Business</p>
                         <a href="#">Apple and Business</a>
                         <a href="#">Shop for Business</a>
                     </div>
-                    <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-2">
                         <p class="font-semibold mt-6">For Education</p>
                         <a href="#">Apple and Education</a>
                         <a href="#">Shop for K-12</a>
                         <a href="#">Shop for College</a>
                     </div>
-                    <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-2">
                         <p class="font-semibold mt-6">For Healthcare</p>
                         <a href="#">Apple in Healthcare</a>
                         <a href="#">Health on Apple Watch</a>
                         <a href="#">Health Records on iPhone</a>
                     </div>
-                    <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-2">
                         <p class="font-semibold mt-6">For Government</p>
                         <a href="#">Shop for Government</a>
                         <a href="#">Shop for Veterans and Military</a>
@@ -94,7 +94,7 @@ export class Footer extends HTMLElement{
                 </div>
         
                 <div>
-                    <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-2">
                         <p class="font-semibold mt-6">Apple Values</p>
                         <a href="#">Accessibility</a>
                         <a href="#">Education</a>
@@ -109,7 +109,7 @@ export class Footer extends HTMLElement{
         
             </section>
     
-            <section class="font-light text-gray-500 mt-10">
+            <section class="font-light text-gray-500 mt-5">
                 <div>
                     More ways to shop: 
                     <a class="text-blue-500 underline" href="#">Find an Apple Store</a>
@@ -117,7 +117,7 @@ export class Footer extends HTMLElement{
                     <a class="text-blue-500 underline" href="#">other retailer</a>
                     near you. Or call 1-800-MY-APPLE.
                 </div>
-                <hr class="my-5  border-gray-300">
+                <hr class="my-4  border-gray-300">
                 <div class="flex justify-between">
                     <div class="flex">
                         <p class="pr-10">Copyright © 2024 Apple Inc. All rights reserved.</p>
