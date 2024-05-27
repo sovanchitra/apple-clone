@@ -36,7 +36,7 @@ export class Footer extends HTMLElement{
                         <div class="flex flex-col gap-2">
                             <p class="font-semibold mt-6">Account</p>
                             <a href="#">Manage Your Apple ID</a>
-                            <a href="#">Apple Store Account</a>
+                            <a href="../../../pages/apple-account/apple-account.html">Apple Store Account</a>
                             <a href="#">iCloud.com</a>
                         </div>
                         
