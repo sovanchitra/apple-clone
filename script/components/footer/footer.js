@@ -4,11 +4,11 @@ export class Footer extends HTMLElement{
     }
     connectedCallback(){
         this.innerHTML = `
-        <footer class="flex justify-center">
-            <div class="max-w-[880px] w-screen text-xs text-gray-800 hidden md:block">
+        <footer class="flex justify-center px-3 mb-3">
+            <div class="max-w-screen-lg w-screen text-xs text-gray-800 hidden md:block px-3">
                 <section class="grid grid-cols-5 font-light gap-10">
                     <div>
-                        <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col gap-2">
                             <p class="font-semibold mt-6">Shop and learn</p>
                             <a href="#">Store</a>
                             <a href="#">Mac</a>
@@ -23,7 +23,7 @@ export class Footer extends HTMLElement{
                             <a href="#">Gift Cards</a>
                             
                         </div>
-                        <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col gap-2">
                             <p class="font-semibold mt-6">Apple Wallet</p>
                             <a href="#">Wallet</a>
                             <a href="#">Apple Card</a>
@@ -33,14 +33,14 @@ export class Footer extends HTMLElement{
                     </div>      
                         
                     <div>
-                        <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col gap-2">
                             <p class="font-semibold mt-6">Account</p>
                             <a href="#">Manage Your Apple ID</a>
                             <a href="#">Apple Store Account</a>
                             <a href="#">iCloud.com</a>
                         </div>
                         
-                        <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col gap-2">
                             <p class="font-semibold mt-8">Entertainment</p>
                             <a href="#">Apple One</a>
                             <a href="#">Apple TV+</a>
@@ -54,7 +54,7 @@ export class Footer extends HTMLElement{
                         </div>
                     </div>
             
-                    <div class="flex flex-col space-y-2">
+                    <div class="flex flex-col gap-2">
                         <p class="font-semibold mt-6">Apple Store</p>
                         <a href="#">Find a Store</a>
                         <a href="#">Genius Bar</a>
@@ -70,24 +70,24 @@ export class Footer extends HTMLElement{
                     </div>
                     
                     <div>
-                        <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col gap-2">
                             <p class="font-semibold mt-6">For Business</p>
                             <a href="#">Apple and Business</a>
                             <a href="#">Shop for Business</a>
                         </div>
-                        <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col gap-2">
                             <p class="font-semibold mt-6">For Education</p>
                             <a href="#">Apple and Education</a>
                             <a href="#">Shop for K-12</a>
                             <a href="#">Shop for College</a>
                         </div>
-                        <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col gap-2">
                             <p class="font-semibold mt-6">For Healthcare</p>
                             <a href="#">Apple in Healthcare</a>
                             <a href="#">Health on Apple Watch</a>
                             <a href="#">Health Records on iPhone</a>
                         </div>
-                        <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col gap-2">
                             <p class="font-semibold mt-6">For Government</p>
                             <a href="#">Shop for Government</a>
                             <a href="#">Shop for Veterans and Military</a>
@@ -95,7 +95,7 @@ export class Footer extends HTMLElement{
                     </div>
             
                     <div>
-                        <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col gap-2">
                             <p class="font-semibold mt-6">Apple Values</p>
                             <a href="#">Accessibility</a>
                             <a href="#">Education</a>
@@ -136,9 +136,9 @@ export class Footer extends HTMLElement{
                 </section>
             </div>
 
-            <div class="max-w-[880px] w-screen text-xs text-gray-800 md:hidden">
-                <section class="flex flex-col gap-y-2 mt-3">
-                    <details class="flex flex-col space-y-2">
+            <div class="max-w-screen-lg w-full text-xs text-gray-800 md:hidden">
+                <section class="w-full flex flex-col gap-y-2 mt-3">
+                    <details class=" w-full flex flex-col gap-2">
                         <summary class="flex justify-between">
                             <p class="font-semibold">Shop and learn</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -159,7 +159,7 @@ export class Footer extends HTMLElement{
                     </details>
                     <hr>
         
-                    <details class="flex flex-col space-y-2">
+                    <details class="flex flex-col gap-2">
                         <summary class="flex justify-between">
                             <p class="font-semibold">Apple Wallet</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -173,7 +173,7 @@ export class Footer extends HTMLElement{
                     </details>
                     <hr>
         
-                    <details class="flex flex-col space-y-2">
+                    <details class="flex flex-col gap-2">
                         <summary class="flex justify-between">
                             <p class="font-semibold">Account</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -186,7 +186,7 @@ export class Footer extends HTMLElement{
                     </details>
                     <hr>
         
-                    <details class="flex flex-col space-y-2">
+                    <details class="flex flex-col gap-2">
                         <summary class="flex justify-between">
                             <p class="font-semibold">Entertainment</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -205,7 +205,7 @@ export class Footer extends HTMLElement{
                     </details>
                     <hr>
         
-                    <details class="flex flex-col space-y-2">
+                    <details class="flex flex-col gap-2">
                         <summary class="flex justify-between">
                             <p class="font-semibold">Apple Store</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -226,7 +226,7 @@ export class Footer extends HTMLElement{
                     </details>
                     <hr>
         
-                    <details class="flex flex-col space-y-2">
+                    <details class="flex flex-col gap-2">
                         <summary class="flex justify-between">
                             <p class="font-semibold">For Business</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -238,7 +238,7 @@ export class Footer extends HTMLElement{
                     </details>
                     <hr>
         
-                    <details class="flex flex-col space-y-2">
+                    <details class="flex flex-col gap-2">
                         <summary class="flex justify-between">
                             <p class="font-semibold">For Education</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -251,7 +251,7 @@ export class Footer extends HTMLElement{
                     </details>
                     <hr>
         
-                    <details class="flex flex-col space-y-2">
+                    <details class="flex flex-col gap-2">
                         <summary class="flex justify-between">
                             <p class="font-semibold">For Healthcare</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -264,7 +264,7 @@ export class Footer extends HTMLElement{
                     </details>
                     <hr>
         
-                    <details class="flex flex-col space-y-2">
+                    <details class="flex flex-col gap-2">
                         <summary class="flex justify-between">
                             <p class="font-semibold">For Government</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -276,7 +276,7 @@ export class Footer extends HTMLElement{
                     </details>
                     <hr>
         
-                    <details class="flex flex-col space-y-2">
+                    <details class="flex flex-col gap-2">
                         <summary class="flex justify-between">
                             <p class="font-semibold">Apple Values</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
