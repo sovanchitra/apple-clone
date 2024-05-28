@@ -5,7 +5,7 @@ export class NavBar extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
         <nav class="relative flex justify-center w-full h-10 text-black bg-gray-100">
-            <div class="max-w-screen-lg w-full flex justify-between md:justify-evenly gap-8 py-2 px-3">
+            <div class="max-w-screen-lg w-full flex justify-between md:justify-evenly gap-8 py-2 px-5">
                 <div class="flex w-[2%]">
                     <a href="/pages/homepage/homepage.html">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="apple-logo" class="w-5 h-5 md:w-4" viewBox="0 0 16 16">
