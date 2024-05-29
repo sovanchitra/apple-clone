@@ -18,39 +18,39 @@ export class NavBar extends HTMLElement{
                         <button class="h-10"><a href="#">Store</a></button>
                         <div class="hidden group-hover:block absolute z-10 left-0 w-screen h-fit bg-gray-100 shadow-xl">
                             <div class="max-w-screen-lg flex mx-auto py-10">
-                                    <div class="flex gap-20">
-                                        <div>
-                                            <p class="text-sm text-gray-500 pb-3">Shop</p>
-                                            <ul class="text-xl font-semibold space-y-3">
-                                                <li>Shop the Latest</li>
-                                                <li>Mac</li>
-                                                <li>iPad</li>
-                                                <li>iPhone</li>
-                                                <li>Apple Watch</li>
-                                                <li>Apple Vision Pro</li>
-                                                <li>Accessories</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm text-gray-500 pb-3">Quick Links</p>
-                                            <ul class="text-sm font-medium space-y-3">
-                                                <li>Find a Store</li>
-                                                <li>Order Status</li>
-                                                <li>Apple Trade In</li>
-                                                <li>Financing</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm text-gray-500 pb-3">Shop Special Stores</p>
-                                            <ul class="text-sm font-medium space-y-3">
-                                                <li>Certified Refurbished</li>
-                                                <li>Education</li>
-                                                <li>Business</li>
-                                                <li>Veterans and Military</li>
-                                                <li>Goverment</li>
-                                            </ul>
-                                        </div>
+                                <div class="flex gap-20">
+                                    <div>
+                                        <p class="text-sm text-gray-500 pb-3">Shop</p>
+                                        <ul class="text-xl font-semibold space-y-3">
+                                            <li>Shop the Latest</li>
+                                            <li>Mac</li>
+                                            <li>iPad</li>
+                                            <li>iPhone</li>
+                                            <li>Apple Watch</li>
+                                            <li>Apple Vision Pro</li>
+                                            <li>Accessories</li>
+                                        </ul>
                                     </div>
+                                    <div>
+                                        <p class="text-sm text-gray-500 pb-3">Quick Links</p>
+                                        <ul class="text-sm font-medium space-y-3">
+                                            <li>Find a Store</li>
+                                            <li>Order Status</li>
+                                            <li>Apple Trade In</li>
+                                            <li>Financing</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-500 pb-3">Shop Special Stores</p>
+                                        <ul class="text-sm font-medium space-y-3">
+                                            <li>Certified Refurbished</li>
+                                            <li>Education</li>
+                                            <li>Business</li>
+                                            <li>Veterans and Military</li>
+                                            <li>Goverment</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
