@@ -1,42 +1,76 @@
 // apple support
 const productItemsData = [
-    {image: "../../assets/images/support/image-grid-iphone_2x.png", text: "iPhone"},
-    {image: "../../assets/images/support/image-grid-mac_2x.png", text: "Mac"},
-    {image: "../../assets/images/support/image-grid-ipad_2x.png", text: "iPad"},
-    {image: "../../assets/images/support/image-grid-watch-_2x.png", text: "Watch"},
-    {image: "../../assets/images/support/image-grid-apple-vision-pro_2x.png", text: "Vision"},
-    {image: "../../assets/images/support/image-grid-airpods_2x.png", text: "AirPods"},
-    {image: "../../assets/images/support/image-grid-tv_2x.png", text: "TV"},
-]
+  {
+    image: "../../assets/images/support/image-grid-iphone_2x.png",
+    text: "iPhone",
+  },
+  {
+    image: "../../assets/images/support/image-grid-mac_2x.png",
+    text: "Mac",
+  },
+  {
+    image: "../../assets/images/support/image-grid-ipad_2x.png",
+    text: "iPad",
+  },
+  {
+    image: "../../assets/images/support/image-grid-watch-_2x.png",
+    text: "Watch",
+  },
+  {
+    image: "../../assets/images/support/image-grid-apple-vision-pro_2x.png",
+    text: "Vision",
+  },
+  {
+    image: "../../assets/images/support/image-grid-airpods_2x.png",
+    text: "AirPods",
+  },
+  { image: "../../assets/images/support/image-grid-tv_2x.png", text: "TV" },
+];
 
 const productItems = document.getElementById("product-items");
-productItems.innerHTML = productItemsData.map(item => `
+productItems.innerHTML = productItemsData
+  .map(
+    (item) => `
     <div class="flex flex-col items-center gap-4">
-        <img class="h-[70px]" src="${item.image}" alt="">
-        <p>${item.text}</p>
+        <img class="h-[70px] cursor-pointer" src="${item.image}" alt="">
+        <p class="cursor-pointer">${item.text}</p>
     </div>
-`).join("")
-
+`
+  )
+  .join("");
 
 const supportBoxData = [
-    {image: "../../assets/images/support/tile-topic-password_2x.svg", text: "Forgot Apple ID password"},
-    {image: "../../assets/images/support/tile-topic-repair_2x.svg", text: "Apple Repair"},
-    {image: "../../assets/images/support/tile-topic-billing_2x.svg", text: "Billing and subscriptions"},
-]
+  {
+    image: "../../assets/images/support/tile-topic-password_2x.svg",
+    text: "Forgot Apple ID password",
+  },
+  {
+    image: "../../assets/images/support/tile-topic-repair_2x.svg",
+    text: "Apple Repair",
+  },
+  {
+    image: "../../assets/images/support/tile-topic-billing_2x.svg",
+    text: "Billing and subscriptions",
+  },
+];
 
 const supportBox = document.getElementById("support-box");
-supportBox.innerHTML = supportBoxData.map(item => `
+supportBox.innerHTML = supportBoxData
+  .map(
+    (item) => `
     <a href="#">
         <div class="flex flex-col justify-center gap-y-3 h-44 bg-gray-100 rounded-3xl">
             <img class="h-14" src="${item.image}" alt="">
             <p class="text-blue-500 hover:underline">${item.text}</p>
         </div> 
     </a>
-`).join("")
+`
+  )
+  .join("");
 
 // search bar
-const searchBar = document.getElementById('search-bar');
-const placeHolder = document.getElementById('place-holder');
+const searchBar = document.getElementById("search-bar");
+const placeHolder = document.getElementById("place-holder");
 const dropdownContent = `
     <div id="search-dropdown" class="top-24 w-full px-5 lg:px-0">
         <div class="h-fit text-start text-sm border border-gray-300 rounded-b-2xl space-y-3 py-10">
@@ -54,32 +88,30 @@ const dropdownContent = `
 
 let isDropdownVisible = false;
 
-searchBar.addEventListener('click', (event) => {
-    event.stopPropagation(); 
-    if (!isDropdownVisible) {
-        searchBar.insertAdjacentHTML('afterend', dropdownContent);
-        isDropdownVisible = true;
-        placeHolder.classList.remove('rounded-xl')
-        placeHolder.classList.add('rounded-t-2xl')
-    } else {
-        closeDropdown();
-    }
+searchBar.addEventListener("click", (event) => {
+  event.stopPropagation();
+  if (!isDropdownVisible) {
+    searchBar.insertAdjacentHTML("afterend", dropdownContent);
+    isDropdownVisible = true;
+    placeHolder.classList.remove("rounded-xl");
+    placeHolder.classList.add("rounded-t-2xl");
+  } else {
+    closeDropdown();
+  }
 });
 
-document.addEventListener('click', (event) => {
-    if (!searchBar.contains(event.target)) {
-        closeDropdown();
-    }
+document.addEventListener("click", (event) => {
+  if (!searchBar.contains(event.target)) {
+    closeDropdown();
+  }
 });
 
 function closeDropdown() {
-    const dropdown = document.querySelector('#search-dropdown');
-    if (dropdown) {
-        dropdown.remove();
-        isDropdownVisible = false;
-        placeHolder.classList.add('rounded-xl')
-        placeHolder.classList.remove('rounded-t-2xl')
-    }
-
-};
-
+  const dropdown = document.querySelector("#search-dropdown");
+  if (dropdown) {
+    dropdown.remove();
+    isDropdownVisible = false;
+    placeHolder.classList.add("rounded-xl");
+    placeHolder.classList.remove("rounded-t-2xl");
+  }
+}

@@ -1,9 +1,9 @@
-export class Footer extends HTMLElement{
-    constructor(){
-        super();
-    }
-    connectedCallback(){
-        this.innerHTML = `
+export class Footer extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
         <footer class="flex justify-center px-3 mb-3">
             <div class="max-w-screen-lg w-screen text-xs text-gray-800 hidden md:block px-3">
                 <section class="grid grid-cols-5 font-light gap-10">
@@ -314,8 +314,8 @@ export class Footer extends HTMLElement{
                 </section>
             </div>
         </footer>
-        `
-    }
+        `;
+  }
 }
 
 customElements.define("footer-component", Footer);

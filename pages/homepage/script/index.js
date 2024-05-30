@@ -1,22 +1,42 @@
+// first Carousel
+const carouselOneContent = [
+  "../../assets/images/homepage/1960x1102 copy.jpg",
+  "../../assets/images/homepage/homepage (12).jpg",
+  "../../assets/images/homepage/homepage (27).jpg",
+  "../../assets/images/homepage/1960x1102 (1).jpg",
+  "../../assets/images/homepage/1960x1102 (2).jpg",
+  "../../assets/images/homepage/homepage (11).jpg",
+  "../../assets/images/homepage/1960x1102.jpg",
+  "../../assets/images/homepage/homepage (15).jpg",
+  "../../assets/images/homepage/homepage (14).jpg",
+  "../../assets/images/homepage/1960x1102 (3).jpg",
+];
+
+const carouselOneItems = document.getElementById("carousel-one-items");
+carouselOneItems.innerHTML = carouselOneContent
+  .map(
+    (item) => `
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="${item}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2  top-1/2 left-1/2 5 max-w-[800px]" alt="">
+    </div>
+`
+  )
+  .join("");
+
+// second carousel
 const sliders = document.querySelectorAll(".slider");
 
-// If a user hasn't opted in for recuded motion, then we add the animation
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
 }
 
 function addAnimation() {
   sliders.forEach((slider) => {
-    // add data-animated="true" to every `.scroller` on the page
     slider.setAttribute("data-animated", true);
 
-    // Make an array from the elements within `.scroller-Inward`
     const sliderInward = slider.querySelector(".slider-inward");
     const sliderContent = Array.from(sliderInward.children);
 
-    // For each item in the array, clone it
-    // add aria-hidden to it
-    // add it into the `.slider-Inward`
     sliderContent.forEach((item) => {
       const duplicatedItem = item.cloneNode(true);
       duplicatedItem.setAttribute("aria-hidden", true);
