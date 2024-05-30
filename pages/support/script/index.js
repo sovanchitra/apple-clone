@@ -35,7 +35,7 @@ productItems.innerHTML = productItemsData
         <img class="h-[70px] cursor-pointer" src="${item.image}" alt="">
         <p class="cursor-pointer">${item.text}</p>
     </div>
-`
+`,
   )
   .join("");
 
@@ -64,7 +64,7 @@ supportBox.innerHTML = supportBoxData
             <p class="text-blue-500 hover:underline">${item.text}</p>
         </div> 
     </a>
-`
+`,
   )
   .join("");
 
