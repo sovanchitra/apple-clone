@@ -7,7 +7,7 @@ export class NavBar extends HTMLElement {
         <nav class="relative flex justify-center w-full h-10 text-black bg-gray-100">
             <div class="max-w-screen-lg w-full flex justify-between md:justify-evenly gap-8 py-2 px-5">
                 <div class="flex w-fit">
-                    <a href="/homepage.html">
+                    <a href="/index.html">
                         <img class="w-5 md:mt-0.5 md:w-4" src="../../../assets/images/Vectorapple-logo-black.svg" alt="">
                     </a>
                 </div>
