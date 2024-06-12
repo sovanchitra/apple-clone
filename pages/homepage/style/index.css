@@ -1,0 +1,21 @@
+/* 
+When the slider is animated, make its inner content 
+take up as much space as needed and set up the animation 
+for infinite scrolling.
+*/
+.slider[data-animated="true"] .slider-inward {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 35s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+/* 
+Define the scroll animation to move the content to the left 
+by 50% plus a small offset.
+*/
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}

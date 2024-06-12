@@ -1,0 +1,5 @@
+REVIEWBOARD_URL = "https://review.clp.kr/"
+REPOSITORY = "AlphaBeez/Chiv-Sovanchitra/Apple-Clone"
+REPOSITORY_TYPE = "git"
+BRANCH = "feature/homepage"
+LAND_DEST_BRANCH = "feature/homepage"
